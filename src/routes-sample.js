@@ -8,7 +8,7 @@ const server = http.createServer((req, res) => {
   if (req.url === "/") {
     res.statusCode = 200;
     res.setHeader("Content-Type", "text/plain; charset=UTF-8");
-    res.end("Hola mundo! Esta es la home");
+    res.end("Hola mundo! Esta es la home.");
   } else if (req.url === "/users") {
     res.statusCode = 200;
 

@@ -3,7 +3,7 @@ const http = require("http");
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader("Content-Type", "text/plain");
-  res.end("Hola mundo!");
+  res.end("Hola mundo! Probando el --watch");
 });
 
 server.listen("3000", () => {

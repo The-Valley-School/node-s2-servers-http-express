@@ -7,8 +7,8 @@
     "start": "npm run routes-sample",
     "lint": "eslint",
     "prepare": "husky install",
-    "http-sample": "node ./src/http-sample.js",
-    "routes-sample": "node ./src/routes-sample.js",
+    "http-sample": "node --watch ./src/http-sample.js",
+    "routes-sample": "nodemon ./src/routes-sample.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -30,6 +30,7 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-n": "^15.7.0",
     "eslint-plugin-promise": "^6.1.1",
-    "husky": "^8.0.0"
+    "husky": "^8.0.0",
+    "nodemon": "^2.0.22"
   }
 }
